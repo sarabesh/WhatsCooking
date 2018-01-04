@@ -6,12 +6,13 @@ package com.wolf.silver.whatscooking;
 
 public class Recipe {
 
-    private String dish,recipe;
+    private String dish,recipe,image;
 
-    public Recipe(String a,String b)
+    public Recipe(String a,String b,String c)
     {
         this.dish=a;
         this.recipe=b;
+        this.image=c;
     }
     public void setDish(String a)
     {
@@ -24,7 +25,9 @@ public class Recipe {
     }
 
 
-
+    public String getImage(){
+        return image;
+    }
     public String getDish()
     {
         return dish;

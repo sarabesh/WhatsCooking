@@ -73,8 +73,8 @@ String show_url="http://192.168.43.207/wcapi/process_recipshow.php";
 
                                     Recipe r1 = new Recipe(
                                             obj.getString("dish"),
-                                            obj.getString("recipe")
-
+                                            obj.getString("recipe"),
+                                            obj.getString("image")
                                     );
                                     Rlist.add(r1);
 
@@ -105,6 +105,7 @@ String show_url="http://192.168.43.207/wcapi/process_recipshow.php";
             Bundle b=new Bundle();
             b.putString("dish", NowR.getDish());
             b.putString("recipe", NowR.getRecipe());
+            b.putString("image", NowR.getImage());
             b.putString("id",id);
             inti.putExtras(b);
             startActivity(inti);

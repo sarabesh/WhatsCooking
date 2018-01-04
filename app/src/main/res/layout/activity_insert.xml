@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/holo_purple"
+    android:background="@android:color/white"
     tools:context="com.wolf.silver.whatscooking.LoginActivity">
 
 
@@ -56,17 +56,19 @@
        />
 
 
-
-
     <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="90px"
-        android:layout_marginRight="90px"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="#ffffff"
-        android:text="add" />
+        android:layout_gravity="center"
+        android:text="Upload " />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"/>
+
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
